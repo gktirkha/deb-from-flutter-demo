@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Demo Application
+Type=Application
+Icon=/opt/mydemo/data/flutter_assets/assets/logo/logo.svg
+# GenericName=Demo Application
+# Comment=Demo Project to make a debian file
+# Terminal=false 
+# Categories=Utility
+# Keywords=flutter;demo;
+# Version=1.0
+
+# lines starting with "#" are coment and those feilds are optional
