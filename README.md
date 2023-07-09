@@ -1,5 +1,5 @@
 # MAKING A DEB PACKAGE FROM FLUTTER PROJECT
-This documentation is about how to make a.deb package from flutter project.
+This documentation is about how to make a .deb package from flutter project.
 
 >**About deb package:** deb package is a software package file commonly used on Debian based Linux distributions like ubuntu, mint, kali etc. it is just like as.exe file for Windows.
 
@@ -10,10 +10,10 @@ This documentation is about how to make a.deb package from flutter project.
 4.  If the flutter project is dependent on some dependencies like dart\_vlc is dependent on vlc and vlc-devel, so these two packages should be installed on the operating system on which you wand to build the app.
 
 # Setup
-1.  We're going to use [flutter\_to\_debian](https://pub.dev/packages/flutter_to_debian) pub package so, first the following command in a terminal.
-```
-dart pub global activate flutter_to_debian
-```
+1.  We're going to use [flutter\_to\_debian](https://pub.dev/packages/flutter_to_debian) pub package so, first run the following command in a terminal.
+    ```
+    dart pub global activate flutter_to_debian
+    ```
 2.  If it is the first time you are installing a pub package as a global package, open **\~/.bashrc** file and paste following at end of the file ```export PATH="$PATH":"$HOME/.pub-cache/bin"``` and close all the existing terminals like terminals in vs code or gnome terminal etc.,
 
 # Steps To Create.deb package
@@ -137,8 +137,11 @@ dart pub global activate flutter_to_debian
     Icon=/opt/demo/data/flutter_assets/assets/icons/logo/splash_screen_logo.svg
     ```
 
-4.  Form the root of your flutter project run ***flutter build linux
-    --release && flutter\_to\_debian,*** after successful completion you
+4.  Form the root of your flutter project run
+    ```
+    flutter build linux --release && flutter_to_debian
+    ```
+    after successful completion you
     can get deb file from project root/debian/packages.
 
     > The generated deb file through this process can not be installed using gui package manager and can only be installed using command line in terminal.
